@@ -86,7 +86,7 @@ while (true) {
 				const tripId = journey.FramedVehicleJourneyRef.DataFrameRef;
 				const routeId = journey.LineRef;
 				const directionId = journey.DirectionName === "A" ? 0 : 1;
-				const vehicleId = journey.VehicleRef;
+				const vehicleId = journey.VehicleRef ? String(journey.VehicleRef) : undefined;
 
 				console.log(`   ${tripId} | Route: ${routeId} | Direction: ${directionId} | Vehicle: ${vehicleId ?? "None"}`);
 
