@@ -84,7 +84,7 @@ while (true) {
 				}
 
 				const tripId = journey.FramedVehicleJourneyRef.DataFrameRef;
-				const routeId = journey.LineRef;
+				const routeId = journey.LineRef.replace(":LOC", "");
 				const directionId = journey.DirectionName === "A" ? 0 : 1;
 				const vehicleId = journey.VehicleRef ? String(journey.VehicleRef) : undefined;
 
