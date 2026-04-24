@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^2.0.0
-        version: 2.0.0(hono@4.12.15)
+        version: 2.0.0(hono@4.12.11)
       fast-xml-parser:
         specifier: ^5.7.1
         version: 5.7.1
@@ -18,11 +18,11 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1
       hono:
-        specifier: ^4.12.15
-        version: 4.12.15
+        specifier: ^4.12.11
+        version: 4.12.11
       hono-rate-limiter:
         specifier: ^0.5.3
-        version: 0.5.3(hono@4.12.15)
+        version: 0.5.3(hono@4.12.11)
       papaparse:
         specifier: ^5.5.3
         version: 5.5.3
@@ -474,8 +474,8 @@ packages:
       unstorage:
         optional: true
 
-  hono@4.12.15:
-    resolution: {integrity: sha512-qM0jDhFEaCBb4TxoW7f53Qrpv9RBiayUHo0S52JudprkhvpjIrGoU1mnnr29Fvd1U335ZFPZQY1wlkqgfGXyLg==}
+  hono@4.12.11:
+    resolution: {integrity: sha512-r4xbIa3mGGGoH9nN4A14DOg2wx7y2oQyJEb5O57C/xzETG/qx4c7CVDQ5WMeKHZ7ORk2W0hZ/sQKXTav3cmYBA==}
     engines: {node: '>=16.9.0'}
 
   inflight@1.0.6:
@@ -786,9 +786,9 @@ snapshots:
   '@esbuild/win32-x64@0.27.7':
     optional: true
 
-  '@hono/node-server@2.0.0(hono@4.12.15)':
+  '@hono/node-server@2.0.0(hono@4.12.11)':
     dependencies:
-      hono: 4.12.15
+      hono: 4.12.11
 
   '@jsdoc/salty@0.2.12':
     dependencies:
@@ -970,11 +970,11 @@ snapshots:
 
   has-flag@4.0.0: {}
 
-  hono-rate-limiter@0.5.3(hono@4.12.15):
+  hono-rate-limiter@0.5.3(hono@4.12.11):
     dependencies:
-      hono: 4.12.15
+      hono: 4.12.11
 
-  hono@4.12.15: {}
+  hono@4.12.11: {}
 
   inflight@1.0.6:
     dependencies:
