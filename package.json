@@ -1,0 +1,35 @@
+{
+	"name": "gtfsrt-limoges",
+	"description": "GTFS-RT data producer for TCL (Limoges)",
+	"version": "0.1.0",
+	"author": "Kevin BIOJOUT <biojoutk1106@gmail.com>",
+	"license": "MIT",
+	"main": "dist/index.js",
+	"type": "module",
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsx src/index.ts",
+		"start": "node dist/index.js",
+		"lint": "biome lint",
+		"format": "biome format --write"
+	},
+	"packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8",
+	"devDependencies": {
+		"@biomejs/biome": "2.4.13",
+		"@types/node": "^25.6.0",
+		"@types/papaparse": "^5.5.2",
+		"typescript": "^6.0.3"
+	},
+	"dependencies": {
+		"@hono/node-server": "^2.0.0",
+		"fast-xml-parser": "^5.7.1",
+		"gtfs-realtime-bindings": "^1.1.1",
+		"hono": "^4.12.15",
+		"hono-rate-limiter": "^0.5.3",
+		"papaparse": "^5.5.3",
+		"proj4": "^2.20.8",
+		"temporal-polyfill": "^0.3.2",
+		"ts-pattern": "^5.9.0",
+		"tsx": "^4.21.0"
+	}
+}
