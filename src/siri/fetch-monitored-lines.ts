@@ -8,8 +8,13 @@ export async function fetchMonitoredLines(siriEndpoint: string, requestorRef: st
 		LINES_DISCOVERY(requestorRef),
 	)) as SoapResponse<LinesDiscoveryResponse>;
 
-	const annotatedLines = payload.Envelope.Body.LinesDiscoveryResponse.Answer.AnnotatedLineRef ?? [];
-	return annotatedLines
-		.filter((annotatedLine) => annotatedLine.Monitored)
-		.map((annotatedLine) => annotatedLine.LineRef);
+	try {
+		const annotatedLines = payload.Envelope.Body.LinesDiscoveryResponse.Answer.AnnotatedLineRef ?? [];
+		return annotatedLines
+			.filter((annotatedLine) => annotatedLine.Monitored)
+			.map((annotatedLine) => annotatedLine.LineRef);
+	} catch (e) {
+		console.error(e);
+		return [];
+	}
 }

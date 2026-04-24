@@ -46,7 +46,10 @@ let monitoredLinesUpdatedAt = Date.now();
 while (true) {
 	await setTimeout(SIRI_RATELIMIT);
 
-	if (Date.now() - monitoredLinesUpdatedAt >= Temporal.Duration.from({ hours: 1 }).total("milliseconds")) {
+	if (
+		monitoredLines.length === 0 ||
+		Date.now() - monitoredLinesUpdatedAt >= Temporal.Duration.from({ hours: 1 }).total("milliseconds")
+	) {
 		console.log("➔ Updating monitored lines list from SIRI");
 		try {
 			monitoredLines = await fetchMonitoredLines(SIRI_ENDPOINT, REQUESTOR_REF);
