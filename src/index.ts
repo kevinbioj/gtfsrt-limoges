@@ -4,7 +4,6 @@ import { serve } from "@hono/node-server";
 import GtfsRealtime from "gtfs-realtime-bindings";
 import { Hono } from "hono";
 import { rateLimiter } from "hono-rate-limiter";
-import { Temporal } from "temporal-polyfill";
 
 import { PORT, REQUESTOR_REF, SIRI_ENDPOINT, SIRI_RATELIMIT } from "./config.js";
 import { handleRequest } from "./gtfs-rt/handle-request.js";

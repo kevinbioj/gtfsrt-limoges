@@ -10,26 +10,25 @@
 		"build": "tsc",
 		"dev": "tsx src/index.ts",
 		"start": "node dist/index.js",
-		"lint": "biome lint",
-		"format": "biome format --write"
+		"check": "biome check",
+		"check:fix": "biome check --fix"
 	},
-	"packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8",
+	"packageManager": "pnpm@11.5.2+sha512.71c631e382066efc25625d5cf029075de07b61b37f6e27350fbd84b1bda5864c8c1967adc280776b45c30a715c0359a3be08fef42d5bb09e2b99029979692916",
 	"devDependencies": {
-		"@biomejs/biome": "2.4.13",
-		"@types/node": "^25.6.0",
+		"@biomejs/biome": "2.4.16",
+		"@types/node": "^25.9.2",
 		"@types/papaparse": "^5.5.2",
 		"typescript": "^6.0.3"
 	},
 	"dependencies": {
-		"@hono/node-server": "^2.0.0",
-		"fast-xml-parser": "^5.7.1",
-		"gtfs-realtime-bindings": "^1.1.1",
-		"hono": "^4.12.15",
+		"@hono/node-server": "^2.0.4",
+		"fast-xml-parser": "^5.8.0",
+		"gtfs-realtime-bindings": "^2.0.0",
+		"hono": "^4.12.23",
 		"hono-rate-limiter": "^0.5.3",
 		"papaparse": "^5.5.3",
 		"proj4": "^2.20.8",
-		"temporal-polyfill": "^0.3.2",
 		"ts-pattern": "^5.9.0",
-		"tsx": "^4.21.0"
+		"tsx": "^4.22.4"
 	}
 }

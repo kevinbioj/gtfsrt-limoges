@@ -1,5 +1,3 @@
-import { Temporal } from "temporal-polyfill";
-
 export const PORT = 3000;
 export const REQUESTOR_REF = "opendata";
 export const SIRI_ENDPOINT =
